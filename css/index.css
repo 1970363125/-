@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    background: url(https://s3.ax1x.com/2021/01/12/sYtklD.jpg)no-repeat;
+    overflow-x: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul{
+    list-style: none;
+}
+a{text-decoration: none;}
+
+.header,
+.main,
+.footer {
+    width: 100%;
+}
+
+.main1,
+.footer1 {
+    max-width: 1500px;
+}
+
+/* 首屏 */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    /* background: url(https://s1.ax1x.com/2020/10/18/0jZRzT.jpg) fixed center no-repeat;
+    background: url(/img/banner.jpg) fixed center no-repeat;
+    background-size: cover;  */
+  }
+.header1{
+    width: 100%;
+    background: rgba(255, 255, 255,.0);
+    display: flex;
+    justify-content: center;
+
+}
+.nav{
+    max-width: 1500px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+}
+.nav ul {
+    flex: 1;
+    display: flex;
+    line-height: 100px;
+    justify-content: space-evenly;
+}
+
+
+.nav ul li a {
+    color: #Fff;
+    transition: .6s;
+}
+.content{
+    position: absolute;
+    left: 50%;
+    transform :translateX(-50%);
+    top: 28%;
+    color: #Fff;
+}
+#clerk{
+    text-align: center;
+    font-size:14px;
+    position: relative;
+    top: -45px;
+}
+.time1{
+    font-size: 45px;
+    font-weight: 300;
+}
+.navLink{
+    position: relative;
+}
+.navLink::before {
+	content: '';
+	width: 32px;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #000;
+	transition: all 0.4s;
+	transform: scale(0);
+}
+.navLink:hover:before {transform: scale(1);}
