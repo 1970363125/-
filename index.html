@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双双</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/mobile.css">
+
+    <link rel="shortcut icon" href="https://s3.ax1x.com/2021/01/12/sYtFSO.png">
+</head>
+
+<body>
+    <!-- 首屏 -->
+    <div class="header">
+        <div class="header1">
+            <div class="nav">
+                <div class="logo">徐朝壹个人博客</div>
+                <ul>
+                    <li><a href="#" class="navLink">首页</a></li>
+                    <li><a href="#" class="navLink">关于</a></li>
+                    <li><a href="#" class="navLink">作品</a></li>
+                    <li><a href="#" class="navLink">联系</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <p id="clerk">心怀浪漫宇宙也珍惜人间日常</p>
+                <div class="time1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main1"></div>
+    </div>
+    <div class="footer">
+        <div class="footer1"></div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    //获取时间代码
+    function showTime() {
+        var curTime = new Date();
+        $(".time1").html(curTime.toLocaleString());
+        setTimeout("showTime()", 1000);
+    }
+    $(function () {
+        showTime()
+    })
+    //获取文字
+    // $.ajax({
+    //     type: "GET",
+    //     url: "https://api.uixsj.cn/hitokoto/get",
+    //     success: function (data) {
+    //         $(".clerk").html(data);
+    //     }
+    // })
+
+    fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('clerk')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+    
+</script>
+
+</html>
