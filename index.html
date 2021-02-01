@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>双双</title>
+    <title>徐朝壹个人博客</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" media="(max-width:768px)" href="css/mobile.css">
-
     <link rel="shortcut icon" href="https://s3.ax1x.com/2021/01/12/sYtFSO.png">
+    <script src="js/icon.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -18,24 +20,231 @@
             <div class="nav">
                 <div class="logo">徐朝壹个人博客</div>
                 <ul>
-                    <li><a href="#" class="navLink">首页</a></li>
-                    <li><a href="#" class="navLink">关于</a></li>
-                    <li><a href="#" class="navLink">作品</a></li>
-                    <li><a href="#" class="navLink">联系</a></li>
+                    <li>
+                        <a href="#" class="navLink" id="navLink1">首页</a>
+                        <div class="xian1"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="navLink" id="navLink2">关于</a>
+                        <div class="xian2"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="navLink" id="navLink3">作品</a>
+                        <div class="xian3"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="navLink" id="navLink4">联系</a>
+                        <div class="xian4"></div>
+                    </li>
                 </ul>
+                <span class="navgo"></span>
             </div>
             <div class="content">
                 <p id="clerk">心怀浪漫宇宙也珍惜人间日常</p>
                 <div class="time1"></div>
             </div>
+            <div class="click">
+                
+            </div>
         </div>
     </div>
+    <div class="navMenu">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">联系</a></li>
+        </ul>
+        <span class="navgo"></span>
+    </div>
+    <div class="Mask"></div>
     <div class="main">
-        <div class="main1"></div>
+        <div class="main1">
+            <div class="main3-1">
+                <div class="box">
+                    <div class="main3-2">
+                        <div class="main3-tp">
+                            <img src="img/banner.jpg">
+                            <div class="main7">
+                                <p><span>姓名:</span>
+                                    <span>徐朝壹</span></p>
+                                <p><span>简介:</span>
+                                    <span>网页设计者</span></p>
+                                <p><span>邮箱:</span>
+                                    <span>3127882496@qq.com</span></p>
+                                <p><span>电话:</span>
+                                    <span>173-7437-6095</span></p>
+                            </div>
+                        </div>
+                        <div class="main3-3">
+                            <p>技能</p>
+                            <span>UI</span>
+                            <span class="right">65%</span>
+                            <div class="skill">
+                                <div class="progress-0"></div>
+                            </div>
+                            <span>HTML</span>
+                            <span class="right">80%</span>
+                            <div class="skill">
+                                <div class="progress-1"></div>
+                            </div>
+                            <span>CSS3</span>
+                            <span class="right">70%</span>
+                            <div class="skill">
+                                <div class="progress-2"></div>
+                            </div>
+                            <span>jQuery</span>
+                            <span class="right">70%</span>
+                            <div class="skill">
+                                <div class="progress-3"></div>
+                            </div>
+                            <span>JavaScript</span>
+                            <span class="right">30%</span>
+                            <div class="skill">
+                                <div class="progress-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main3-33">
+                        <ul>
+                            <h2>关于我</h2>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                我叫徐朝壹，一个00后学生，来自于湖南湘西目前就读于泸溪县第一职业中学，主学的是网页美工设计，
+                                对于HTML、CSS、JavaScript和jQuery有着一定的了解，
+                                网页响应式设计和UI设计也有一定的了解，目前能用jQuery做一些简单的动态效果。</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="mian1-2">
+                <div class="box"></div>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="works">
+            <h3>我的作品</h3>
+            <p class="underline1"></p>
+    		<div class="workList">
+                <a href="weixin/index.html" target="_blank">
+	    		    <span class="workLink">
+                        <div class="workLinkPic" id="workLinkPic_A"></div>
+                        <div class="workLinkTextBox">
+                            <p class="workLinkText1">仿微信app(flex布局)</p>
+                            <p class="workLinkText2">网页设计/<span>2020-6-30</span></p>
+                        </div>
+                    </span>
+                </a>
+                <a href="qianfeng/index.html" target="_blank">
+	    		    <span class="workLink">
+                        <div class="workLinkPic" id="workLinkPic_XMFLS"></div>
+                        <div class="workLinkTextBox">
+                            <p class="workLinkText1">静态网页练习(简单grid布局)</p>
+                            <p class="workLinkText2">网页设计/<span>2020-6-21</span></p>
+                        </div>
+                    </span>
+                </a>
+                <a href="zhizhong/index.html" target="_blank">
+	    		    <span class="workLink">
+                        <div class="workLinkPic" id="workLinkPic_Portal"></div>
+                        <div class="workLinkTextBox">
+                            <p class="workLinkText1">学校网站设计(简单js运用)</p>
+                            <p class="workLinkText2">网页设计/<span>2020-6-12</span></p>
+                        </div>
+                    </span>
+                </a>
+                <a href="shenhai/index.html" target="_blank">
+                    <span class="workLink">
+                        <div class="workLinkPic" id="workLinkPic_Pixel"></div>
+                        <div class="workLinkTextBox">
+                            <p class="workLinkText1">静态网页练习(float布局)</p>
+                            <p class="workLinkText2">网页设计/<span>2020-5-1</span></p>
+                        </div>
+                    </span>
+                </a>
+                <a href="" target="_blank" >
+	    		    <span class="workLink">
+                        <div class="workLinkPic" id="workLinkPic_YXH"></div>
+                        <div class="workLinkTextBox">
+                            <p class="workLinkText1">英雄联盟官网(团队合作)</p>
+                            <p class="workLinkText2">网页设计/<span>2020-11-13</span></p>
+                        </div>
+                    </span>
+                </a>
+                <a href="zhuanyezu/home.html" target="_blank">
+	    		    <span class="workLink">
+                        <div class="workLinkPic" id="workLinkPic_SSS"></div>
+                        <div class="workLinkTextBox">
+                            <p class="workLinkText1">专业组官网(简单jq运用)</p>
+                            <p class="workLinkText2">网页设计/<span>2021-1-20</span></p>
+                        </div>
+                    </span>
+                </a>
+                <a href="" target="_blank">
+	    		    <span class="workLink">
+                        <div class="workLinkPic" id="workLinkPic_cmd"></div>
+                        <div class="workLinkTextBox">
+                            <p class="workLinkText1">影视网页官网(团队合作)</p>
+                            <p class="workLinkText2">网页设计/<span>2021-1-5</span> </p>
+                        </div>
+                    </span>
+                </a>
+    		</div>
+    </div>
+    <div class="contact">
+        <h3>联系我</h3>
+        <p class="underline1"></p>
+        <div class="row">
+            <div class="main4-3">
+                <ul>
+                    <li>
+                        <i><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#tel-fill"></use>
+                            </svg></i>
+                        <span>电话</span>
+                        <p>186-7432-7954</p>
+                    </li>
+                    <li>
+                        <i><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#youxiang"></use>
+                            </svg></i>
+                        <span>电子邮件</span>
+                        <p>1970363125@qq.com</p>
+                    </li>
+                    <li>
+                        <i><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#dizhi"></use>
+                            </svg></i>
+                        <span>地址</span>
+                        <p>湖南省湘西自治州泸溪县</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="main4-4">
+                <form action="" method="POST">
+                    <input type="text" required placeholder="你的姓名*">
+                    <input type="emali" required placeholder="你的邮件*">
+                    <div class="main4-5">
+                        <textarea name="message" required placeholder="信息*"></textarea>
+                        <button class="btn">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#zhifeiji"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="footer">
-        <div class="footer1"></div>
+        <div class="footer1">
+            <p>Copyright © 2021 All Rights Reserved</p>
+        </div>
     </div>
+    <!-- <a href="#" class="a-top">
+        <img src="img/上.png" alt="">
+    </a> -->
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/index.js"></script>
