@@ -1,0 +1,37 @@
+.logo {
+    margin-left: 18px;
+}
+.nav ul {
+  display: none;
+}
+.navgo{
+    display: block;
+}
+.workList{
+    left: 0%;
+    width: 100%;
+}
+.time1{font-size: 40px;}
+.main1{
+    width: auto;
+}
+.box{
+    flex-direction: column;
+}
+.main3-2{
+    margin-bottom: 50px;
+}
+.row{
+    max-width: 700px;
+    flex-direction: column;
+    margin:  0 auto;
+}
+.main4-3{
+    width: 93%;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.main4-4{
+    width: 93%;
+    padding: 0;
+}
