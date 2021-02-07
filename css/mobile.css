@@ -1,37 +1,35 @@
-.logo {
-    margin-left: 18px;
-}
-.nav ul {
-  display: none;
-}
-.navgo{
-    display: block;
-}
-.workList{
-    left: 0%;
+
+  .box {
+    padding: 0;
+    width: 343px;
+  }
+  .main3-2 {
     width: 100%;
-}
-.time1{font-size: 40px;}
-.main1{
-    width: auto;
-}
-.box{
+    padding: 0; 
+  }
+  .main3-33{
+      margin-top: 11rem;
+      margin-bottom: 2rem;
+  }
+  .main3-tp {
+      margin-top: 2rem;
+    display: flex;
     flex-direction: column;
-}
-.main3-2{
-    margin-bottom: 50px;
-}
-.row{
-    max-width: 700px;
-    flex-direction: column;
-    margin:  0 auto;
-}
-.main4-3{
-    width: 93%;
-    padding: 0;
-    margin-bottom: 30px;
-}
-.main4-4{
-    width: 93%;
-    padding: 0;
-}
+    height: auto;
+  }
+  .main7{
+      margin-top: 2rem;
+  }
+  .main7 p{
+      margin-left: 3rem;
+  }
+  .main3-3,.main3-33{
+      margin-left: 2rem;
+      margin-right: 2rem;
+  }
+  .main3-2 img{
+      margin: auto;
+  }
+  .main4-3,.main4-4{
+      margin-left: 12px;
+  }
